@@ -1,0 +1,85 @@
+body{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	background-color: #EAEAEA;
+	position: relative;
+}
+#backg{
+	font-family: arial;
+	font-size: 282px;
+	font-weight: bolder;
+	position: absolute;
+	margin-left: 350px;
+	top: -100px;
+	color: #fff;
+}
+p{
+	text-align: justify;
+	padding: 20px;
+	font-size: 14.5px;
+	font-family: arial;
+}
+h2{
+	font-size: 24px;
+	text-align: center;
+	margin-top: -10px;
+}
+h3{
+	text-align: center;
+}
+.izq{
+	position: absolute;
+	width: 33.33%;
+	float: left;
+	margin-left: 0px;
+}
+.centro
+{
+	position: absolute;
+	width: 33.33%;
+	margin-left: 420px;
+}
+.Der{
+	position: absolute;
+	width: 33.33%;
+	margin-left: 840px;
+}
+#Uno
+{
+	top: 620px;
+	position: absolute;
+	margin-left: 20px;
+	text-decoration: none;
+	color: #fff;
+	background-color: blue;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+#Dos
+{
+	top: 620px;
+	position: absolute;
+	margin-left: 130px;
+	text-decoration: none;
+	color: #fff;
+	background-color: Red;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+img{
+	position: absolute;
+	display: block;
+	top: 615px;
+	margin-left: 380px;
+	padding: 20px;
+}
+#grafico{
+	display: none;
+}
+button
+{
+	border-radius: 10px;
+}

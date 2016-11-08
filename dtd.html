@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/dtd.css">
+<title>DTD</title>
+</head>
+<body>
+<div id="contenedor">
+	<p id="backg">XML</p>
+	<header>
+		<h1>DOCUMENT TYPE DEFINITIONS  (DTDs)</h1>
+		<p><b>Crear una definición del tipo de documento (DTD) es como crear nuestro propio lenguaje de marcado</b>, para una aplicación específica. Por 	ejemplo, podríamos crear un DTD que defina una tarjeta de visita. A partir de ese DTD, tendríamos una serie de elementos XML que nos permitirían
+		   definir tarjetas de visita.<br>
+			<b>La DTD define los tipos de elementos, atributos y entidades permitidas</b>, y puede expresar algunas limitaciones para combinarlos.
+			Los documentos XML que se ajustan a su DTD, se denominan "válidos". El concepto de "validez" no tiene nada que ver con el de estar "bien-formado". Un documento "bien- fomado" simplemente respeta la estructura y sintaxis definidas por la especificación de XML. Un documento "bien-formado" puede además ser "válido" si cumple las reglas de una DTD determinada. También existen documentos XML sin una DTD asociada, en ese caso no son "válidos", pero tampoco "inválidos"… simplemente "bien-formados"… o no.
+			La DTD puede residir en un fichero externo, y quizá compartido por varios (puede que miles) de documentos. O bien, puede estar contenida en el propio documento XML, como parte de su declaración de tipo de documento.<br>
+			Veamos un ejemplo:<br>
+			<b>
+			&lt!DOCTYPE etiqueta[<br>
+			&lt!ELEMENT etiqueta (nombre, calle, ciudad, pais, codigo)><br>
+			&lt!ELEMENT nombre (#PCDATA)&gt<br>
+			&lt!ELEMENT calle (#PCDATA)&gt<br>
+			&lt!ELEMENT ciudad (#PCDATA)&gt<br>
+			&lt!ELEMENT pais (#PCDATA)&gt<br>
+			&lt!ELEMENT codigo (#PCDATA)&gt<br>
+			]&gt<br>
+
+			&ltetiqueta&gt<br>
+			&ltnombre&gtFulano Mengánez&lt/nombre&gt<br>
+			&ltcalle&gtc/ Mayor, 27&lt/calle&gt<br>
+			&ltciudad&gtValderredible&lt/ciudad&gt<br>
+			&ltpais&gtEspaña&lt/pais&gt<br>
+			&ltcodigo&gt39343&lt/codigo&gt<br>
+			&lt/etiqueta&gt</b><br>
+
+			La declaración del tipo de documento comienza en la primera línea y termina con "]>". Las declaraciones DTD son las líneas que empiezan con " Las declaraciones DTD son las líneas que empiezan con "&lt!ELEMENT" y se denominan declaraciones de tipo elemento. También se pueden declarar atributos, entidades y anotaciones para una DTD.<br>
+			En el ejemplo anterior, todas las declaraciones DTD que definen "etiqueta" residen dentro del documento. Sin embargo, la DTD se puede definir parcial o completamente en otro lugar. Por ejemplo:<br>
+
+			<b>&lt?xml version="1.0"?&gt<br>
+			&lt!DOCTYPE coche SYSTEM "http://www.sitio.com/dtd/coche.dtd"&gt<br>
+			&ltcoche&gt<br>
+			&ltmodelo&gt...&lt/modelo&gt<br>
+			...<br>
+			&lt/coche&gt<br></b>
+		</p>	
+	</header>
+	</header>
+	<footer>
+	</footer>
+</div>
+</body>
+</html>
